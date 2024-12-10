@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário Dinâmico</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Perfil do Usuário Dinâmico</h1>
+    <h2>Entre em contato</h2>
+  </header>
+
+  <div class="container">
+    <form id="contactForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" placeholder="Digite seu nome" required>
+
+      <label for="email">Gmail:</label>
+      <input type="email" id="email" placeholder="Digite seu Gmail" required>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" rows="4" placeholder="Digite sua mensagem" required></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <div class="info-display" id="infoDisplay">
+      <h3>Informações Enviadas:</h3>
+      <p><strong>Nome:</strong> <span id="displayName"></span></p>
+      <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      <p><strong>Mensagem:</strong> <span id="displayMessage"></span></p>
+    </div>
+  </div>
+<script src="js/script.js"></script>
+</body>
+</html>
